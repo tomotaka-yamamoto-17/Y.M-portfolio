@@ -55,7 +55,7 @@ main{
     background: #EEE;
   }
 
-    #firstArticle {
+    .firstArticle {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -90,9 +90,9 @@ main{
     }
 
 
-    #secondArticle {
+    .secondArticle {
       display: flex;
-      flex-direction: row;
+      flex-direction: row-reverse;
       justify-content: space-between;
       width: 90%;
       padding: 1rem;
@@ -135,4 +135,20 @@ footer {
   text-align: center;
   background: #333;
   color: white;
+}
+
+
+@media only screen and (max-width: 834px) {
+
+  #container{
+    width: 100%;
+  }
+
+  .firstArticle {
+      display: block;
+    }
+
+    .secondArticle {
+      display: block;
+    }
 }
